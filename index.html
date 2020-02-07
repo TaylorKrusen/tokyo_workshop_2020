@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dropbox Tokyo Ichiban Demo</title>
+    <script type="text/javascript" 
+            src="https://www.dropbox.com/static/api/2/dropins.js" 
+            id="dropboxjs" 
+            data-app-key="mealdbjxfevsf41">
+    </script>
+</head>
+    <body>
+        <h1>Dropbox Tokyo Ichiban Demo!</h1>
+        <hr>    
+        <h2>Chooser demo</h2>
+            <h3>日本が大好きです</h3>
+            <div id="chooserContainer"></div>  
+            <pre id="targetFile"></pre>
+            <hr>
+            <div id="addFileMember">
+                <h2>Add member to file demo</h2>
+                <form method="POST" action="/add-file-member">
+                    <label for="fileId">Target file id</label>
+                    <input type="text" name="fileId" />
+                    </br>
+                    <label for="targetUser">User to add</label>
+                    <input type="text" name="targetUser" />
+                    </br>
+                    <input type="submit" />
+                </form>
+            </div>
+            <script src="custom.js"></script>     
+    </body>
+</html>
+    
